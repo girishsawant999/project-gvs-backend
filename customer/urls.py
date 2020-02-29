@@ -1,5 +1,7 @@
 from django.urls import path, include
 
-urlpatterns = [
+from customer import views
 
+urlpatterns = [
+ path('',views.Customer.as_view(),name='customer'),
 ]
