@@ -6,7 +6,7 @@ from .models import Customers
 def create_customer(data):
     try:
         customer = Customers(
-            # updated_at=datetime.now(),
+            updated_at=datetime.now(),
             first_name=data.get('first_name').capitalize(),
             last_name=data.get('last_name').capitalize(),
             gender=data.get('gender'),
